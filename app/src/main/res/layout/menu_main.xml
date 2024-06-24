@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="#343434">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/top_background" />
+
+    <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="MENÚ"
+             android:textSize="60sp"
+             android:layout_marginTop="60dp"
+             android:layout_marginLeft="25dp"
+             android:textColor="#ffffff"/>
+
+     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnIngresarProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:backgroundTint="#E1A500"
+            android:drawableLeft="@drawable/comida"
+            android:text="Registrar Producto" />
+
+        <Button
+            android:id="@+id/btnIngresarCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp"
+            android:backgroundTint="#E1A500"
+            android:drawableLeft="@drawable/productooo"
+            android:text="Registrar Categoria" />
+
+        <Button
+            android:id="@+id/btnIngresarMesa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp"
+            android:backgroundTint="#E1A500"
+            android:drawableLeft="@drawable/mesaaa"
+            android:text="Registrar Mesa" />
+
+        <Button
+            android:id="@+id/btnCerraMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp"
+            android:backgroundTint="#E1A500"
+            android:drawableLeft="@drawable/cerrarsesion"
+            android:text="Cerrer Sesion" />
+
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
