@@ -10,7 +10,8 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class RegistroPedidoActivity : AppCompatActivity() {
-
+  private  lateinit var btnCerrar:Button
+  private  lateinit var  btnRegresarPrincipal:Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -20,7 +21,19 @@ class RegistroPedidoActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        btnCerrar=findViewById(R.id.btnCerrar)
+        btnRegresarPrincipal=findViewById(R.id.btnRegresarPrincipal)
+
+        btnCerrar.setOnClickListener { cerrar() }
+        btnRegresarPrincipal.setOnClickListener { regresarPrincipal() }
 
     }
-
+    fun cerrar(){
+        var intent=Intent(this,LoginActivity::class.java)
+        startActivity(intent)
+    }
+    fun regresarPrincipal(){
+        var intent=Intent(this,PanelActivity::class.java)
+        startActivity(intent)
+    }
 }

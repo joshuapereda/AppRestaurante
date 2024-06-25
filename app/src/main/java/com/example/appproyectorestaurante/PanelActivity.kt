@@ -17,6 +17,7 @@ class PanelActivity : AppCompatActivity() {
     private lateinit var cardMesa4:CardView
     private lateinit var cardMesa5:CardView
     private lateinit var cardMesa6:CardView
+    private  lateinit var btnCerrar:Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -32,6 +33,7 @@ class PanelActivity : AppCompatActivity() {
         cardMesa4=findViewById(R.id.cardMesa4)
         cardMesa5=findViewById(R.id.cardMesa5)
         cardMesa6=findViewById(R.id.cardMesa6)
+        btnCerrar=findViewById(R.id.btnCerrar)
 
         cardMesa1.setOnClickListener { card1() }
         cardMesa2.setOnClickListener { card2() }
@@ -39,6 +41,7 @@ class PanelActivity : AppCompatActivity() {
         cardMesa4.setOnClickListener { card4() }
         cardMesa5.setOnClickListener { card5() }
         cardMesa6.setOnClickListener { card6() }
+        btnCerrar.setOnClickListener { cerrar() }
     }
     fun card1(){
         var intent=Intent(this,RegistroPedidoActivity::class.java)
@@ -62,6 +65,10 @@ class PanelActivity : AppCompatActivity() {
     }
     fun card6(){
         var intent=Intent(this,RegistroPedidoActivity::class.java)
+        startActivity(intent)
+    }
+    fun cerrar(){
+        var intent=Intent(this,LoginActivity::class.java)
         startActivity(intent)
     }
 
