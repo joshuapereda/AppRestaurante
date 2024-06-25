@@ -1,5 +1,6 @@
 package com.example.appproyectorestaurante
 
+
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -31,7 +32,6 @@ class ListadoReservaActivity : AppCompatActivity() {
         btnBuscar = findViewById(R.id.btnBuscarR)
         btnAgregar = findViewById(R.id.btnAgregarR)
         rvListado = findViewById(R.id.rvListadoR)
-
         btnVolver.setOnClickListener { volver() }
 
     }

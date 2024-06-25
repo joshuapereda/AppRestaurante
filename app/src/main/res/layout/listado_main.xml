@@ -53,7 +53,6 @@
                         android:layout_width="48dp"
                         android:layout_height="49dp"
                         android:src="@drawable/app_registration_24px" />
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
