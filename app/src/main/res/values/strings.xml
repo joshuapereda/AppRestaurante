@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AppProyectoRestaurante</string>
+    <string name="labelNom">Ingresar Apellido</string>
 </resources>
