@@ -18,7 +18,7 @@
             android:layout_marginTop="16dp"
             android:backgroundTint="@color/black"
             android:drawablePadding="0dp"
-            android:paddingLeft="45dp"
+            android:paddingLeft="47dp"
             app:icon="@drawable/arrow_back_ios_24px"
             android:textColor="#FFFFFF"
             app:cornerRadius="0pt"
