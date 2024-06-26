@@ -11,7 +11,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
         <Button
             android:id="@+id/btnVolverC"
             android:layout_width="wrap_content"
@@ -19,7 +18,7 @@
             android:layout_marginTop="16dp"
             android:backgroundTint="@color/black"
             android:drawablePadding="0dp"
-            android:paddingLeft="45dp"
+            android:paddingLeft="48dp"
             app:icon="@drawable/arrow_back_ios_24px"
             android:textColor="#FFFFFF"
             app:cornerRadius="0pt"
