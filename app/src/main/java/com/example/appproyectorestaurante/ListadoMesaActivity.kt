@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.textfield.TextInputEditText
 
-class ListadoReservaActivity : AppCompatActivity() {
+class ListadoMesaActivity : AppCompatActivity() {
     private lateinit var btnVolver: Button
     private lateinit var edtBuscar: TextInputEditText
     private lateinit var btnBuscar: Button
@@ -21,18 +21,18 @@ class ListadoReservaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.listado_producto_main)
+        setContentView(R.layout.listado_mesa_main)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-        btnVolver = findViewById(R.id.btnVolverR)
-        edtBuscar = findViewById(R.id.edtBuscarR)
-        btnBuscar = findViewById(R.id.btnBuscarR)
-        btnAgregar = findViewById(R.id.btnAgregarR)
-        rvListado = findViewById(R.id.rvListadoR)
+        btnVolver = findViewById(R.id.btnVolverM)
+        edtBuscar = findViewById(R.id.edtBuscarM)
+        btnBuscar = findViewById(R.id.btnBuscarM)
+        btnAgregar = findViewById(R.id.btnAgregarM)
+        rvListado = findViewById(R.id.rvListadoM)
         btnVolver.setOnClickListener { volver() }
 
     }

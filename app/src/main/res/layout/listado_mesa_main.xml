@@ -12,14 +12,17 @@
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/btnVolverR"
+            android:id="@+id/btnVolverM"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:backgroundTint="@color/black"
-            android:text="VOLVER"
+            android:drawablePadding="0dp"
+            android:paddingLeft="45dp"
+            app:icon="@drawable/arrow_back_ios_24px"
             android:textColor="#FFFFFF"
             app:cornerRadius="0pt"
+            app:iconSize="30dp"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -53,15 +56,16 @@
                         android:layout_width="48dp"
                         android:layout_height="49dp"
                         android:src="@drawable/app_registration_24px" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:fontFamily="sans-serif-condensed"
-                        android:text="REGISTROS"
+                        android:text="REGISTROS DE MESAS"
                         android:textAlignment="center"
                         android:textColor="#000000"
-                        android:textSize="34sp"
+                        android:textSize="24sp"
                         android:textStyle="bold" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -75,16 +79,16 @@
                     android:id="@+id/textField"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="@string/labelNom">
+                    android:hint="@string/labelMe">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/edtBuscarR"
+                        android:id="@+id/edtBuscarM"
                         android:layout_width="292dp"
                         android:layout_height="wrap_content" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <Button
-                    android:id="@+id/btnBuscarR"
+                    android:id="@+id/btnBuscarM"
                     style="?attr/materialIconButtonStyle"
                     android:layout_width="95dp"
                     android:layout_height="wrap_content"
@@ -96,7 +100,7 @@
             </LinearLayout>
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/btnAgregarR"
+                android:id="@+id/btnAgregarM"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -112,7 +116,7 @@
         </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvListadoR"
+            android:id="@+id/rvListadoM"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:padding="10pt"

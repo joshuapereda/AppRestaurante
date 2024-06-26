@@ -27,11 +27,11 @@
                 android:id="@+id/textView12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CLIENTE"
+                android:text="N. MESA"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tvClienteR"
+                android:id="@+id/tvMesaM"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView" />
@@ -40,11 +40,11 @@
                 android:id="@+id/textView14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="MESA"
+                android:text="DESCRIPCIÓN"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tvMesaR"
+                android:id="@+id/tvDesM"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView" />
@@ -52,7 +52,7 @@
         </LinearLayout>
 
         <ImageView
-            android:id="@+id/imgFoto"
+            android:id="@+id/imgFotoM"
             android:layout_width="289dp"
             android:layout_height="171dp"
             android:layout_weight="1"

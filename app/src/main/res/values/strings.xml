@@ -1,4 +1,9 @@
 <resources>
+    <string name="labelUsuario">Ingresar Usuario</string>
+    <string name="labelContrasena">Ingresar Contraseña</string>
+
     <string name="app_name">AppProyectoRestaurante</string>
-    <string name="labelNom">Ingresar Apellido</string>
+    <string name="labelNom">Ingresar Nombre</string>
+    <string name="labelMe">Ingresar Mesa</string>
+    <string name="labelCat">Ingresar Categoria</string>
 </resources>
