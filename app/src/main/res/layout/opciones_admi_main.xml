@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="#343434">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/top_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Contenedor para el botón de cerrar sesión y el título -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Botón de Cerrar Sesión -->
+            <Button
+                android:id="@+id/btnCerrarSesion"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/black"
+                android:drawablePadding="0dp"
+                android:textColor="#FFFFFF"
+                app:cornerRadius="0pt"
+                app:icon="@drawable/cerrarsesion"
+                app:iconSize="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ROLES"
+                android:textSize="60sp"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="25dp"
+                android:textColor="#ffffff"
+                android:layout_below="@id/btnCerrarSesion"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btnAdm"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:backgroundTint="#E1A500"
+                android:drawableLeft="@drawable/admi"
+                android:text="ADMINISTRADOR"
+                android:textColor="#000000"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/btnMozo"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:backgroundTint="#E1A500"
+                android:drawableLeft="@drawable/mmmmoozzzzoo"
+                android:text="MOZO"
+                android:textColor="#000000"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/btnCocina"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:backgroundTint="#E1A500"
+                android:drawableLeft="@drawable/cocccciiinnnaa"
+                android:text="COCINA"
+                android:textColor="#000000"
+                app:cornerRadius="0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
